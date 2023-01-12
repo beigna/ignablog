@@ -10,7 +10,7 @@ services:
     networks:
       - internal
     volumes:
-      - ignablog:/var/www/html/fp-content/
+      - ignablog:/var/www/html/fp-content:ro
 
   php:
     build:
@@ -19,7 +19,7 @@ services:
     networks:
       - internal
     volumes:
-      - ignablog:/var/www/html/fp-content
+      - ignablog:/var/www/html/fp-content:rw
 
 networks:
   internal:
